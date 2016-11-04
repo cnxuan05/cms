@@ -9,3 +9,12 @@ for (i = 0; i <= 10; i++) {
     document.write("The number is " + i);
     document.write("<br/>");
 }
+
+window.onload = function(){
+
+    var oUl = document.getElementById('ul1');
+
+    alert(oUl.childNodes.length);
+}
+
+
