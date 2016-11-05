@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# matplotlib 使用方法
 '''
 import matplotlib.pyplot as plt
 plt.plot([1, 2, 3], [4, 5, 6])

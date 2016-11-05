@@ -13,8 +13,9 @@ for (i = 0; i <= 10; i++) {
 window.onload = function(){
 
     var oUl = document.getElementById('ul1');
+    alert(oUl.childNodes[0].nodeType);
 
-    alert(oUl.childNodes.length);
+    //alert(oUl.childNodes.length);
 }
 
 
