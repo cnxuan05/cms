@@ -9,6 +9,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^', include('water.urls')),
+
+
     # url(r'^index$', 'water.views.index', name='index'),
     # url(r'^$', 'water.views.index', name='index'),
 ]

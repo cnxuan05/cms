@@ -78,15 +78,19 @@ WSGI_APPLICATION = 'hoolu.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'rice',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
-
+# AUTH_USER_MODEL = 'water.User'
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -105,3 +109,40 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# LOGGING = {
+#     'VERSION':1,
+#     'disable_existing_loggers':False,
+#     'handlers':{
+#         'console':{
+#             'level':'DEBUG',
+#             'class':'logging.StreamHandler',
+#         }
+#     },
+#     'loggers':{
+#         'django.db.backends':{
+#             'handlers':['console'],
+#             'propagate':True,
+#             'level':'DEBUG',
+#         }
+#     },
+#
+# }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

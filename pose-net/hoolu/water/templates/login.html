@@ -1,0 +1,20 @@
+{% extends "base/base.html" %}
+    {% block head_css %}
+        <link src="login.css">
+    {% endblock %}
+    {% block head_js %}
+        <script src="login.js"></script>
+    {% endblock %}
+
+{% block header %}
+{% endblock %}
+{% block container %}
+    <form method="get" enctype="multipart/form-data">
+    {{ lf.as_p }}
+    <input type="submit" value="ok" />
+</form>
+{% endblock %}
+{% block footer %}
+{% endblock %}
+{% block foot_js %}
+{% endblock %}
